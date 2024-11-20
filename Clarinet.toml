@@ -1,0 +1,29 @@
+[project]
+name = 'DecentralizedFileStorage'
+description = ''
+authors = []
+telemetry = true
+cache_dir = './.cache'
+requirements = []
+[contracts.file-management]
+path = 'contracts/file-management.clar'
+clarity_version = 2
+epoch = 2.5
+
+[contracts.stacks-storage-integration]
+path = 'contracts/stacks-storage-integration.clar'
+clarity_version = 2
+epoch = 2.5
+
+[contracts.storage-provider-incentives]
+path = 'contracts/storage-provider-incentives.clar'
+clarity_version = 2
+epoch = 2.5
+[repl.analysis]
+passes = ['check_checker']
+
+[repl.analysis.check_checker]
+strict = false
+trusted_sender = false
+trusted_caller = false
+callee_filter = false
